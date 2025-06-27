@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    //if()
+
+        var age=18;
+        if(age>18)
+            {
+                document.write("<h1> Qualified for driving</h1>");
+            }
+
+    //if else
+        
+        var age=17;
+        if(age>18)
+            {
+                document.write("<b>Qualified for driving<b>")
+            }
+        else
+            {
+                document.write("not qualified for driving")
+            }
+
+        
+
+    //ternary operator (condition)> 'yes': 'No'
+
+        var age=10;
+
+        var ans=(age>18) ? '<b> Qualified for driving</b>': '<b> Not qualified'
+        document.write(ans)
+
+    //if else if 
+
+    var x=100;
+    var y=20;
+    var z=15;
+
+    if(x>z)
+        {
+            document.write("X is greater than Z");
+        }
+    else if(x>y)
+        {
+            document.write("X is grater than Y");
+        }
+    else
+        {
+            document.write("X is not greater than y or z");
+        }
+
+    //if else if else
+    var name="Antima"
+    if (name=="Ant")
+        {
+            document.write("Name is Ant");
+        }
+    else if(name=="Ronak")
+        {
+            document.write("Name is ROnak");
+        }
+    else if(name=="Priya")
+        {
+            document.write("name is Priya");
+        }
+    else
+        {
+            document.write("all above condition is false");
+        }
+
+    //switch case
+    switch('40')
+        {
+            case'10':
+            document.write("ans is 10");
+            break;
+
+            case '20':
+            document.write("ans is 20");
+            break;
+
+            case '30':
+            document.write("ans is 30");
+            break;
+
+            case '40':
+            document.write("ans is 40");
+            break;
+
+            default:
+            document.write("all above condition is false");
+            break;
+        }
+
+    //nested if
+     var age=17;
+
+     if(age>18)
+        {
+            if(age==18)
+                {
+                    document.write("Qualified for driving");
+                }
+            else
+                {
+                    document.write("Not qualified for driving");
+                }
+        }
+     else
+        {
+            document.write("not qualified for driving");
+        }
+
+    //
+        
+</script>
+</body>
+</html>
