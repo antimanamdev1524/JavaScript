@@ -1,18 +1,221 @@
-<!-- 
- 
-What is JavaScript?
-JS is a programming language. We use it to give instructions to the computer.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>What is JavaScript?</h2>
+        <p> JS is a programming language. We use it to give instructions to the computer.</p>
 
-input(code) -----  Computer -----output
+        input(code)-----> computer -----> output
 
-website ----inspect----console
-    use ctrl+k to clear screen
-    we can run jvs code here
--->
+        <small> we can code temperory in browser</small>
+        <small>
+            <br>
+                open any website
+            <br>
+                => inspect <br>
+                => ctrl+k (to clear screen) <br>
+                code:
+                <h4 style="color: red;"> alert("welcome");</h4>
+                <p> this code will be create alert </p>
+                <span>============================================</span>
+        </small>
+    </div>
 
-<script>
+    <div>
+        <div style="text-align: center;">
+            <h1 style="color:dodgerblue"><u> Chapter 1 </u></h1>
+            <h2> Variable and Data Types </h2>
+        </div>
+        <div>
+            <h3> Our 1st JS Code </h3>
+            <p> Console.log us used to log (print) a message to the console</p>
+            <p style="color: red; text-align: center;"> console.log("Welcome to JVS tutorial")</p>
+            <script>
+                console.log("Welcome to JVS tutorial");
+                console.log("I love coding");
+            </script>
+            <p> (Note: this code will run only in browser. (inspect-colsole))</p>
+        </div>
+        <span>=====================================================</span>
+    </div>
 
-    alert("apna college");
-    // iska use krke temporaty alert use kr skte h 
-    
-</script>
+    <div>      
+            <h2 style="color:rgb(179, 47, 10)"><u> Variable </u></h1>
+            <p> Variables are containers for data. It can be change.</p>
+            <img src="img/data container.png" width="30%" height="50%"/>
+               <p> 
+                 <br>
+                    full_name= "Antima Namdev"; <br>
+                    age= "29yrs"; <br>
+                    x=null; <br>
+                    y=undefined;
+                </p>
+            
+                <br>
+                <p style="color: red;"> 
+                    console.log(full_name); <br>
+                    console.log(age);  
+                     <p> (Note: this code will run only in browser. (inspect-colsole))</p>              
+                </p>
+                <script>
+                    full_name= "Antima Namdev";
+                    age= "29yrs";
+                    console.log(full_name);
+                    console.log(age);
+                </script>
+                
+                <p> we can store only two values as boolean data type are: True and False. </p>
+                <h4 style="color: dodgerblue"> <u> Variable Rules </u></h4>
+                <ul>
+                    <li> Variable names are case sensitive: "a" & "A" is different.</li>
+                    <li> Only letters, digits, underscore(_) and $ is allowed. (not even space).</li>
+                    <li> Only a letter, underscore(_) or $ should be 1st character.</li>
+                    <li> Reserved words cannot be used as variable names.</li>
+                </ul>
+            
+                <h4 style="color: dodgerblue"> <u> let, const & var </u></h4>
+                <span><p style="color:blueviolet">var:</p> Variable can be re-declared & updated. A global scope variable.</span>
+                <span><p style="color:blueviolet">let:</p> Variable cannot re-declared but can be updated. A block scope variable.</span>
+                <span><p style="color:blueviolet">const:</p> Variable cannot be re-declared or updated. A block scope variable.</span>        
+            </div>
+
+            <div>
+                <h2 style="color:rgb(179, 47, 10)"><u> Data Types</u></h1>
+                <p> two types: <br> Primitive data type <br> Non-primitive data types  </p>
+                <p> <mark>Primitive:</mark> Number, String, Boolean, undefined, null, bigint, symbol</p>
+                <span>
+                    let age= 50; ( Number)
+                    let full_name= "Antima Namdev" (string)
+                    isFollow= true; (boolean)
+                    let x; (value and type both are undefined type)
+                    let x=null; (object)
+                    let x=BigInt("456")   (Bigint)
+                </span>
+
+                <p><mark>Non-primitive:</mark>Objects (Arrays and functions)</p>
+                <p> object: It is a collection of values. generally it is declare by cont, also we can declare it by let</p>
+                <span>
+                    const student={ <br>
+                        fullname: "Antima Namdev", <br>
+                        age: 29,    <br>
+                        cgpa: 8.5,  <br>
+                        isPass: true, <br>
+                    };
+                </span>
+                <script>
+                    const student={
+                        fullname: "Antima Namdev",
+                        age: 29,
+                        cgpa: 8.5,
+                        isPass: true,
+                    };
+                </script>
+                <p> Note: search in console: "student" will be seen all details of student</p>
+                <p> seach "type of student" (it will be show data type as "object" means collection of variables)</p>
+                <p> search student["full_name"]  (it wll show only fullname)</p>
+                <p> search student.fullname (also can be search like that)</p>
+                <span>============================================</span>
+            </div>
+
+            <div>
+                <div style="text-align: center;">
+                    <h1 style="color:dodgerblue"><u> Chapter 2 </u></h1>
+                    <h2> Operators and Conditinal Statements </h2>
+                </div>
+
+                <div>
+                    <h2 style="color:rgb(179, 47, 10)"><u> Comments </u></h1>
+                    <p> Part of code which is not executed </p>
+                    <p>
+                        //this is single line Comments
+                        <br>
+                        <br>
+                        /* this <br>
+                          multi-line<br>
+                          comment in JavaScript */
+                    </p>
+                    <script>
+                        //this is single ine comment
+
+                        /* this is
+                            multi-line
+                            comment */
+                    </script>
+                    <span>======================================</span>
+                </div>
+
+                <div>
+                    <h2 style="color:rgb(179, 47, 10)"><u> Operators </u></h1>
+                    <p> Operators is used to perform some operation on data </p>
+                    <p><b>Ex.</b>Arithmetic operator: +, -, *, /, %</p>
+                    <ul>
+                        <li>Modulus</li>
+                        <li>Exponentiation</li>
+                        <li>Increment</li>
+                        <li>Decrement</li>
+                    </ul>
+
+                    <mark>Arithmetic operator:</mark>
+                    <p>
+                        let a=5; <br>
+                        let b=6; <br>
+                        c= a*b; <br>
+                        console.log("a+b=", a+b) <br>
+                        console.log(c)
+                        
+                        <script>
+                            let a=5;
+                            let b=6;
+                             c= a*b; 
+                            console.log("a+b=", a+b)
+                            console.log("a*b", c)
+                        </script>
+                    </p>
+
+                    <mark>Exponentiation</mark>
+                    <p>
+                        a**b (b is a power of a) <br>
+                        a**2 (a square)
+                    </p>
+                    
+                    <mark> Unary operator </mark>
+                    <p>
+                        a++ (a+1) <br>
+                        a-- (a-1)
+                    
+                        <script>
+                            let x = 6;
+                            let y = 5;
+                            
+
+                            console.log("x=", x)  //x=6
+                            x++;
+                            console.log("x++ :", x++) //x+1= 7
+                            x--;
+                            console.log("x-- :", --x) //x-1 = 7-1=6
+                        </script>
+
+                        <pre>
+                            a++   (post increment):  running work complete hone k bd value change hogi<br>
+                            ++a   (pre increment): running work complete hone se pehle hi value change ho<br>
+                            a--   (post decrement)<br>
+                            --a   (pre decrement)
+                        </pre>
+                    </p>
+
+                    <mark> Assignment Operator:</mark>
+
+                
+                </div>
+
+        </div>
+            </div>
+
+</body>
+</html>

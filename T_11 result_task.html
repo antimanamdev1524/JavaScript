@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap example</title>
 </head>
 <body>
+    <div style="width: 50%; text-align:center; border:solid 2px red">
+        <h2>Marks</h2>
+
+        <form>
+            English: <input type="number" id="english" placeholder="Enter English Marks" name="english"> <br><br>
+            Hindi: <input type="number" id="hindi" placeholder="Enter Hindi Marks" name="hindi"><br><br>
+            Gujrati: <input type="number" id="gujrati" placeholder="Enter Gujrati Marks" name="gujrati"><br><br>
+            
+            <button class="btn btn-primary" onclick="return result()"> Submit </button>
+        </form>
+    
+
+        <h1 id="test1"></h1>
+        <h1 id="test2"></h1>
+        <h1 id="test3"></h1>
+
+    </div>
+
+        <script>
+            function result()
+            {
+                var english=document.getElementById('english').value;
+                var hindi= document.getElementById('hindi').value;
+                var gujrati= document.getElementById('gujrati').value;
+
+                var total= +english  +  +hindi  +  +gujrati;
+                document.getElementById('test1').innerHTML="Total is: " +total;
+
+                var per=(total*100)/300;
+                document.getElementById('test2').innerHTML="Percent is: " + per + "%";
+
+                if(per>80)
+                    {
+                        document.getElementById('test3').innerHTML="Grade is: A++";
+                    }
+                else if(per>70)
+                    {
+                        document.getElementById('test3').innerHTML="Grade is: A";
+                    }
+                else if(per>60)
+                    {
+                        document.getElementById('test3').innerHTML="Grade is: B";
+                    }
+                else if(per>50)
+                    {
+                        document.getElementById('test3').innerHTML="Grade is: C";
+                    }
+                else if(per>40)
+                    {
+                        document.getElementById('test3').innerHTML="Grade is: Pass";
+                    }
+                else
+                    {
+                        document.getElementById('test3').innerHTML="Grade is: Fail";
+                    }
+                return false;
+            }
+        </script>
+
     
 </body>
 </html>

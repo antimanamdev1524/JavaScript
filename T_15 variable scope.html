@@ -1,0 +1,36 @@
+<!-- JavaScript variables have only two scopes. 
+
+Global variables: A global variable has global scope which means it can be defined anywhere in your JavaScript code.
+
+Local variabvles: A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.
+
+Within the body of a function, 
+a local variable takes predence over a global variable with the same name. 
+If you declare a local variable or function parameter w5th the same name as a global variable, you effectively hide the global variable. 
+Take a look into the following example.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var demo1 = "global1";  //declare a global or public variable.
+        function sayHello()
+        {
+            var demo2= "local";  //declare a local or private variable
+            document.write(demo2);  //only use in {} block.            
+            document.write(demo1);
+        } 
+        sayHHello();
+
+        document.write(demo1);  //can be use inside or outside of a function
+        document.write(demo2);  //local variable- can be use only inside a function
+    </script>
+</body>
+</html>
