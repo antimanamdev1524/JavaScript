@@ -161,7 +161,7 @@
                         <li>Decrement</li>
                     </ul>
 
-                    <mark>Arithmetic operator:</mark>
+                    <mark>Arithmetic Operator:</mark>
                     <p>
                         let a=5; <br>
                         let b=6; <br>
@@ -184,7 +184,7 @@
                         a**2 (a square)
                     </p>
                     
-                    <mark> Unary operator </mark>
+                    <mark> Unary Operator </mark>
                     <p>
                         a++ (a+1) <br>
                         a-- (a-1)
@@ -202,20 +202,77 @@
                         </script>
 
                         <pre>
-                            a++   (post increment):  running work complete hone k bd value change hogi<br>
-                            ++a   (pre increment): running work complete hone se pehle hi value change ho<br>
-                            a--   (post decrement)<br>
+                            a++   (post increment):  running work complete hone k bd value change hogi
+                            ++a   (pre increment): running work complete hone se pehle hi value change ho
+                            a--   (post decrement)
                             --a   (pre decrement)
                         </pre>
                     </p>
 
                     <mark> Assignment Operator:</mark>
+                    <p> =, +=, -=, *=, %=, **= </p>
+                    <p>
+                        let p=5;<br>
+                        let q=4;<br><br>
 
-                
+                        p+=4;   (p=p+4  //5+4=9) <br>
+                        console.log("p=", p)
+                    </p>
+                    <script>
+                        let p=5;
+                        let q=4;
+
+                        p+=4;  //p= p+4      5+4=9
+                        console.log("p=", p)
+                    </script>
+
+                    <mark>Comparison Operator</mark>
+                    <pre>
+                         ==   &nbsp; equal to
+                         ===  &nbsp; equal to & type
+                         !=   &nbsp; not equal to
+                         !==  &nbsp; Not equal to & type
+                         >    &nbsp; greater than 
+                         >=   &nbsp; greater than or equal to
+                         <    &nbsp; less than 
+                         <=   &nbsp; less than or equal to
+                    </pre>
+                    <p>
+                        let m=5; <br>
+                        let n=5; <br>
+
+                        console.log("is m=m? ", m==n); //true
+                    </p>
+                    <script>
+                        let m=5;
+                        let n=5;
+
+                        console.log("is m=m? ", m==n); //true
+
+                        let c=5;
+                        let d="5";
+
+                        console.log("is c==d?", c==d) //yes because JS will convert first string to number if we are keeping any number as an string
+                    </script>
+                    <p>
+                        let c=5; <br>
+                        let d="5"; <br>
+
+                        console.log("is c==d?", c==d) //yes  <br><br>
+                    
+                    <b>Note:</b> If we are keeping any number as an string, JavaScript will convert first string into number. then it will be proceed to next.
+                    </p>  
+                    
+                    <mark> Logical Operator </mark>
+                    <pre>
+                        &&   Logical AND     T && T   TRUE       
+                        ||   Logical OR      T || F   TRUE  (atleat one condition should be TRUE)
+                        !    Logical NOT     T  ! F   FALSE   
+                    </pre>
                 </div>
+                
 
-        </div>
-            </div>
+    </div>
 
 </body>
 </html>

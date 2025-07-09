@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" ons
+    <script>
+        function validation()
+        {
+            var ufn=document.getElementById('ufn').value;
+            if (ufn=="")
+                {
+                    alert('User Firstname Field is required');
+                    return false;
+                }
+
+                var uln=document.getElementById('uln').value;
+                if(uln=="")
+                {
+                    document.getElementById('ulnmsg').innerHTML="User Lastname Field is required";
+                    return false;
+                }
+        }
+    </script>
+</html>
